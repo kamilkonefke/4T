@@ -1,0 +1,92 @@
+html {
+    background-image: url("res/tlo.jpg");
+    background-size: cover;
+}
+
+* {
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    margin: 0;
+}
+
+h1 {
+    margin: 8% 0;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Trebuchet MS', sans-serif;
+    color: green;
+    margin: 32px;
+}
+
+hr {
+    border: 5px solid greenyellow;
+}
+
+.nav {
+    float: left;
+    margin-right: 24px;
+}
+
+.nav a {
+    width: 128px;
+    display: block;
+    margin-bottom: 2px;
+    padding: 16px 128px 16px 12px;
+    background-color: green;
+    color: white;
+}
+
+.nav a:hover {
+    background-color: greenyellow;
+    color: black;
+}
+
+.container {
+    background-color: whitesmoke;
+    display: flex;
+    width: 100vw;
+}
+
+.content {
+    padding: 32px;
+    background-color: white;
+    text-align: justify;
+    width: 100%;
+}
+
+.link-div * {
+    align-self: center;
+}
+
+.footer {
+    display: block;
+    text-align: right;
+    margin: 16px;
+}
+
+.links-table {
+    width: 50vw;
+}
+
+.links-table th, td {
+    text-align: center;
+}
+
+.link-btn {
+    color: grey;
+    border: 1px solid grey;
+    padding: 12px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    margin: 5px;
+    height: 300px;
+    width: 500px;
+}

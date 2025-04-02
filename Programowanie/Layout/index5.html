@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<head>
+    <title>AE</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            width: 360px;
+        }
+        #calosc * {
+            display: flex;
+            flex-flow: column warp;
+            flex: 1 1 0;
+        }
+        #calosc div {
+            background-color: black;
+            margin: -1px;
+            border: 1px solid white;
+            height: 70px;
+        }
+    </style>
+
+    <div id="calosc">
+        <div></div>
+        <div style="flex-direction: row;">
+            <div></div>
+            <div></div>
+        </div>
+        <div></div>
+        <div>
+            <div></div>
+            <div style="flex-direction: column;">
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
+        <div>
+            <div style="flex-direction: row;">
+                <div style="flex-direction: column;">
+                    <div></div>
+                    <div></div>
+                </div>
+                <div style="flex-direction: column;">
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div></div>
+        </div>
+
+        <div style="flex-direction: row;">
+            <div></div>
+            <div style="flex-grow: 2;"></div>
+            <div></div>
+        </div>
+        <div></div>
+    </div>
+</body>
+</html>
