@@ -39,18 +39,48 @@ function hex_to_rgb() {
 }
 
 function rgb_to_hex() {
-    let user_hex = String(prompt("Podaj liczbe w formacie rgb(0, 0, 0)")).toLowerCase();
+    let user_hex = String(prompt("Podaj liczbe w formacie rgb(0, 0, 0)")).toLowerCase().trim();
 
-    // czy na poczatku jest rgb( i na koncu )
-    if (!user_hex.includes("rgb(")) {
-        return;
+    // Sprawdzenie poprawnosci zapisu
+    let cutoff_rgb = user_hex.split("(")
+    let values = cutoff_rgb[1].split(",") // podzielenie wszystkich wartosci
+    values[2] = values[2].replace(")", "") // usunać ")" na koncu
+
+    let hex = []
+    for(let i = 0; i < values.length; i++) {
+        hex[i] = parseInt(values[i]).toString(16);
+        if (hex[i].length == 1) {
+            hex[i] = "0" + hex[i]
+        }
     }
 
-    if (user_hex[user_hex.length] != ")") {
-        return;
-    }
+    let result = `#${hex[0]}${hex[1]}${hex[2]}`;
 
-    console.log("ae")
+    return result
 }
 
-rgb_to_hex();
+function short_hex() {
+    let user_hex = String(prompt("Podaj liczbe zapisana w systemie szesnastkowym")).toLowerCase().trim();
+    let hex = user_hex.split("#")[1]
+
+    for(let i = 0; i < hex.length; i += 2) {
+        if(hex[i] != hex[i+1])
+            return
+    }
+
+    console.log("tak")
+}
+
+function is_grey() {
+    let user_hex = String(prompt("Podaj liczbe zapisana w systemie szesnastkowym")).toLowerCase().trim();
+    let hex = user_hex.split("#")[1]
+
+    for(let i = 0; i < hex.length / 3; i++) {
+        if(hex[i] != hex[i+2] && hex[i+2] != hex[i+4]) 
+            return
+    }
+
+    console.log("tak")
+}
+
+is_grey();
