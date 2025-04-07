@@ -1,0 +1,9 @@
+programowanie
+imperatywne
+obiektowe
+deklaratywne
+obiekowe
+funkcyjne
+(haskell, lisp)
+logiczne
+(prolog)
