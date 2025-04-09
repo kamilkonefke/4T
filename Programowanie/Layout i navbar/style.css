@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li, div {
+    border: 1px solid black;
+    padding: 12px;
+    flex-grow: 2;
+    padding: 12px;
+    margin: 12px;
+    display: flex;
+}
+
+li, ul {
+    width: 100%;
+    display: flex;
+    margin: 8px;
+}
+
+.content {
+    flex-direction: row;
+}
+
+.nav {
+    height: 128px;
+}
+
+.inv {
+    border: none;
+}
+
+.footer {
+    height: 64px;
+}
