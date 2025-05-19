@@ -122,3 +122,18 @@ var liczby = [3, 6, 17, 7, 2, 9, 3, 4, 3, 4];
 
 //     console.log(`SUMA: ${suma} zł`);
 // }
+
+// function bank() {
+//     var przelewy = [ 10000, -250, 1000, -2300];
+//     var stan_konta = 0;
+//     przelewy.forEach((n) => {
+//         if (n > 0) {
+//             console.log(`uznania: ${n}`);
+//         }
+//         else {
+//             console.log(`obciążenia: ${n}`)
+//         }
+//         stan_konta += n;
+//     });
+//     console.log(`Stan konta wynosi - ${stan_konta}zł`);
+// }
