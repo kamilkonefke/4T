@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statki</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+        #canvas {
+            display: flex; 
+        }
+
+        #player {
+            margin: 16px;
+        }
+
+        #computer {
+            margin: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div id="canvas">
+        <div id="player"></div>
+        <div id="computer"></div>
+    </div>
+    <a id="info"></a><br>
+    <button onmousedown="round()">Dalej</button>
+    <input type="text" id="user-input" placeholder="Wzór: 5 7"><br>
+    <script src="main.js"></script>
+</body>
+</html>
