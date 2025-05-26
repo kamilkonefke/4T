@@ -71,3 +71,29 @@ nav div a {
 .nav-deactive {
     border-top: 10px transparent solid;
 }
+
+main.oferta {
+    display: inline;
+}
+
+details {
+    background-color: #CCBCB4;
+    padding: 16px;
+}
+
+details img {
+    display: block;
+}
+
+details[open] {
+    background-color: #A1887F;
+}
+
+details[open] summary {
+    text-transform: uppercase;
+}
+
+details[open] summary::marker {
+    color: white;
+    content: "*";
+}

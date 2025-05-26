@@ -1,0 +1,33 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+summary {
+    font-family: 'Gill Sans', sans-serif;
+    text-align: center;
+    cursor: pointer;
+}
+
+details[open] summary::marker {
+    color: red;
+}
+
+details {
+    border: 2px solid white;
+    margin: 16px;
+    padding: 16px;
+    border-radius: 4px;
+}
+
+details[open] {
+    border: 2px solid red;
+}
+
+div {
+    display: flex;
+}
+
+div a {
+    padding: 6px;
+}
