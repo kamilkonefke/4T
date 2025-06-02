@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl.css">
+    <title>Turystyka moja pasja</title>
+</head>
+<body>
+    <!-- baner -->
+    <header>
+        <h1>Podróże z uśmiechem</h1>
+    </header> 
+
+    <!-- ciasteczka -->
+    <section class="ciasteczka">
+        Witaj na naszej stronie
+    </section>
+
+    <nav>
+        <div class="nav-deactive">
+            <a href="biuro.html"><h1>WYCIECZKI</h1></a>
+        </div>
+        <div class="nav-deactive">
+            <a href="dokumenty.html"><h1>DOKUMENTY</h1></a>
+        </div>
+        <div class="nav-deactive">
+            <a href="oferta.html"><h1>OFERTA</h1></a>
+        </div>
+        <div class="nav-active">
+            <a href="rezerwacja.html"><h1>REZERWACJA</h1></a>
+        </div>
+    </nav>
+
+    <main class="rezerwacja">
+        <form>
+            <fieldset>
+                <label>Imie i nazwisko:<br><input type="text" max="55" placeholder="Imię Nazwisko"></label><br>
+
+                <label>E-mail:<br><input type="email"></label><br>
+            </fieldset>
+
+            <fieldset>
+                <label>
+                Wybierz Cel wycieczki
+                <br>
+                <select>
+                    <option selected>Włochy</option>
+                    <option>Polska</option>
+                    <option>Hiszpania</option>
+                    <option>Grecja</option>
+                </select>
+                </label>
+                <br>
+                <label>Data rozpoczęcia:<br><input type="date" value="2021-08-10"></label><br>
+                <label>Liczba osób:<br><input type="number" max="100" value="7"></label><br>
+            </fieldset>
+
+            <fieldset>
+                <label>Preferowane aktywności:<br><input type="text"></label><br>
+                <label><input type="checkbox" checked> Sporty wodne</label><br>
+                <label><input type="checkbox"> Zwiedzanie</label><br>
+                <label><input type="checkbox" checked> Relaks</label><br>
+            </fieldset>
+
+            <fieldset>
+                <label>Kod rabatowy:<br><input type="text"></label><br>
+                <br>
+                <label>
+                    <a href="regulamin.txt" target="_blank">Regulamin</a><br>
+                    <label><input type="radio" name="reg">Akceptuję</label>
+                    <label><input type="radio" name="reg" checked>Nie akceptuję</label>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <input type="submit" value="ZAREZERWUJ"></input>
+            </fieldset>
+        </form>
+    </main>
+    
+    <footer>
+        Stronę przygotował: ae
+    </footer>
+    </body>
+    
+    </html>

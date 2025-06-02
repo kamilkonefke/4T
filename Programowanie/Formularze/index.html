@@ -4,35 +4,85 @@
         <meta charset="UTF-8">
         <title>Formularze</title>
         <style>
+            body {
+            }
             label {
                 margin: 2px;
+                color: red;
             }
             textarea {
                 resize: vertical;
                 max-height: 128px;
+                background-image: url(work.gif);
+                background-position: center;
             }
-
             input[type="button"] {
-                color: cornflowerblue;
+                color: white;
+            }
+            input {
+                background-image: url(ae.gif);
+                background-position: center;
+                color: white;
+            }
+            input[type="reset"] {
+                color: red;
             }
         </style>
     </head>
     <body>
         <form>
-            <input type="text" maxlength="20" placeholder="Jak masz na imie?">
-            <input type="number" min="1" max="300" , step="0.5" placeholder="Ilość">
-            <input type="datetime-local">
-            <select>
-                <option selected disabled>Tututu</option>
-                <option>Max Verstappen</option>
-                <option>Robert Kubica</option>
-                <option>Charles Leclerc</option>
-                <option>Lewis Hamilton</option>
-            </select>
-            <br>
-            <textarea></textarea>
-            <br>
-            <input type="button" value="Jak się nazywasz? 🦽">
-        </form>
-    </body>
-</html>
+            <fieldset>
+                <legend>PODAJ SWOJE DANE</legend>
+                <input type="text" maxlength="20" placeholder="Jak masz na imie?">
+                <input type="number" min="1" max="300" , step="0.5" placeholder="Ilość">
+                <input type="datetime-local">
+                <select>
+                    <option selected disabled>Tututu</option>
+                    <optgroup label="Redbull">
+                        <option>Max Verstappen</option>
+                        <option>Robert Kubica</option>
+                    </optgroup>
+                    <optgroup label="Ferrari">
+                        <option>Charles Leclerc</option>
+                        <option>Lewis Hamilton</option>
+                    </optgroup>
+                </select>
+            
+                <br>
+            
+                <section>
+                    <a>Ile masz lat?</a>
+                    <label><input type="radio" name="ae">0</label>
+                    <label><input type="radio" name="ae">50</label>
+                    <label><input type="radio" name="ae">100</label>
+                </section>
+            
+                <section>
+                    <a>Jak cię zwą?</a>
+                    <label><input type="checkbox">Marian</label>
+                    <label><input type="checkbox">Antek</label>
+                    <label><input type="checkbox">Michał</label>
+                    <label><input type="checkbox">Andrzej</label>
+                    <label><input type="checkbox" checked>e</label>
+                </section>
+            
+                <input type="text" list="trytytki" placeholder="wybiesz typ pacholka">
+                <section>
+                    <datalist id="trytytki">
+                        <option value="zaciskowe"></option>
+                        <option value="odciskowe"></option>
+                        <option value="przylepne"></option>
+                    </datalist>
+                </section>
+            
+                <a>DRILLOWIEC!</a><br>
+                <textarea></textarea>
+                <br>
+            
+                <input type="button" value="MELON $">
+                <input value="ZNISZCZ" type="reset">
+            </fieldset>
+            </form>
+            </body>
+            
+            </html>

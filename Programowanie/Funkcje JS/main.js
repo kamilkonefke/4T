@@ -38,7 +38,6 @@ function czy_zero(n) {
     } else {
         return false
     }
-
 }
 
 function iloraz(dzielna, dzielnik) {
@@ -46,13 +45,12 @@ function iloraz(dzielna, dzielnik) {
         console.log("Nie dziel przez 0");
         return;
     }
-
     return dzielna / dzielnik;
 }
 
 // Inne cwiczenia
-function tell_fortune(nums_children, partners_name, location, job_title) {
-    console.log(`You will be a ${job_title} in ${location}, and married to ${partners_name} with ${nums_children} kids.`);
+function tell_fortune(num_children, partners_name, location, job_title) {
+    console.log(`You will be a ${job_title} in ${location}, and married to ${partners_name} with ${num_children} kids.`);
 }
 
 function calculate_dog_age(human_age) {
